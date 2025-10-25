@@ -13,7 +13,6 @@
       overflow: hidden;
       font-family: 'Bubblegum Sans', cursive;
     }
-
     video#video-fondo {
       position: fixed;
       top: 0;
@@ -23,7 +22,6 @@
       object-fit: cover;
       z-index: -1;
     }
-
     .mensaje {
       position: absolute;
       top: 50%;
@@ -34,8 +32,7 @@
       text-align: center;
       text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     }
-
-    .boton-audio {
+    .btn {
       position: absolute;
       bottom: 20px;
       left: 50%;
@@ -48,17 +45,15 @@
       cursor: pointer;
       font-family: 'Bubblegum Sans', cursive;
     }
-
-    .boton-audio:hover {
+    .btn:hover {
       background: rgba(255, 255, 255, 1);
     }
-
     @media (max-width: 600px) {
       .mensaje {
         font-size: 2em;
         padding: 0 10px;
       }
-      .boton-audio {
+      .btn {
         font-size: 1em;
         padding: 8px 16px;
       }
@@ -77,9 +72,7 @@
   <div class="mensaje">
     no estes triste anxi :>
   </div>
-
-  <button class="boton-audio" onclick="activarAudio()">presioname plis</button>
-
+  <button class="btn" onclick="activarAudio()">presioname plis</button>
   <script>
     function activarAudio() {
       const audio = document.getElementById('audio-fondo');
@@ -88,5 +81,6 @@
   </script>
 </body>
 </html>
+
 
 
